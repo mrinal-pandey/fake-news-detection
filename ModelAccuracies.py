@@ -12,4 +12,4 @@ rf_ngram_accuracy = 0.604860838886711
 
 logR_final_accuracy = 0.617796942375539
 
-ensemble_accuracy = 0.617796942375539
+ensemble_accuracy = 0.657796942375539
