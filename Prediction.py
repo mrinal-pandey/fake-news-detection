@@ -99,7 +99,7 @@ def ensemble(input_text):
 
     result = True if prediction_weighted >= 0.5 else False
 
-    return [result, prediction_weighted]
+    return [result, round(prediction_weighted, 2)]
 
 # Function to run for prediction
 def predict_news(input_text):    
