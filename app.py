@@ -20,7 +20,8 @@ def predict():
     prediction = predict_news(url)
     truth_value = prediction[0]
     truth_probability = prediction[1]
-    result = 'The statement is ' + str(truth_value) + ' with probability ' + str(truth_probability)
+    final_probability = truth_probability if str(truth_value) == 'True' else (1 - truth_probability)
+    result = 'The statement is ' + str(truth_value) + ' with probability ' + str(final_probability)
     return render_template('index.html', prediction_text = result)
 
 if __name__ == "__main__":
